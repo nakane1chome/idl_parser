@@ -1,0 +1,26 @@
+const long length = 2;
+typedef long my_long;
+
+/*SPDX-License-Identifier: Apache-2.0
+Derived from Vortex OpenSplice Community Edition examples*/
+module basic{
+
+	module module_ArrayOfStruct{
+
+		struct Inner{
+			short long1;
+			double double1;
+		};
+		
+		typedef Inner inner_struct;
+		
+		struct ArrayOfStruct_struct{
+			long long1;
+			inner_struct array1[length];
+			my_long mylong1;
+		};
+		
+		#pragma keylist ArrayOfStruct_struct long1
+	};
+};
+		

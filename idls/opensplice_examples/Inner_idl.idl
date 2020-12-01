@@ -1,0 +1,8 @@
+/*SPDX-License-Identifier: Apache-2.0
+Derived from Vortex OpenSplice Community Edition examples*/
+module inner_mod {
+	struct Inner {
+		short short1;
+		double double1;
+	};
+};

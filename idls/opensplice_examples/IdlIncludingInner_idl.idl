@@ -1,0 +1,12 @@
+#include "Inner_idl.idl"
+
+/*SPDX-License-Identifier: Apache-2.0
+Derived from Vortex OpenSplice Community Edition examples*/
+module Outer_mod {
+	struct Outer {
+		long key;
+		inner_mod::Inner inner1;
+	};
+	#pragma keylist Outer key
+};
+		

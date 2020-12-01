@@ -1,0 +1,15 @@
+/*SPDX-License-Identifier: Apache-2.0
+Derived from Vortex OpenSplice Community Edition examples*/
+module basic{
+
+	module module_Array{
+	
+		struct Array_struct{
+			long long1;
+			double array1[3];
+		};
+		
+		#pragma keylist Array_struct long1
+	};
+};
+		
